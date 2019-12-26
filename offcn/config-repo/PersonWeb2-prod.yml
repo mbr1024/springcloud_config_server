@@ -16,6 +16,7 @@ eureka:
       defaultZone: http://localhost:8888/eureka,http://localhost:9999/eureka
 
 ribbon:
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
   ConnectionTimeOut: 1000
   ReadTimeout: 1000
   OkToRetryOnAllOperations: true
