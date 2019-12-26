@@ -28,7 +28,7 @@ PERSONPROVIDER:
     # 切换实例的重试次数
     MaxAutoRetriesNextServer: 1
     # 对当前实例的重试次数
-    MaxAutoRetries: 1
+    MaxAutoRetries: 3
 
 ##如果接口的调用时间超过6秒 才会触发熔断机制的方法 否则正常执行
 ##为了避免因为熔断时间果断 重试机制失效
