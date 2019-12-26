@@ -17,3 +17,8 @@ eureka:
     service-url:
       defaultZone: http://localhost:8888/eureka,http://localhost:9999/eureka
 ProviderVersion: PersonProvider2
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
