@@ -18,7 +18,7 @@ eureka:
 ribbon:
   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
   ConnectionTimeOut: 1000
-  ReadTimeout: 1000
+  ReadTimeout: 6000
   OkToRetryOnAllOperations: true
   MaxAutoRetriesNextServer: 1
   MaxAutoRetries: 5
