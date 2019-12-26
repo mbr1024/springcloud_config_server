@@ -23,7 +23,7 @@ PERSONPROVIDER:
     # 切换实例的重试次数
     MaxAutoRetriesNextServer: 1
     # 对当前实例的重试次数
-    MaxAutoRetries: 1
+    MaxAutoRetries: 4
 
 # 开启Feign的熔断功能
 feign:
