@@ -15,20 +15,19 @@ eureka:
     service-url:
       defaultZone: http://localhost:8888/eureka,http://localhost:9999/eureka
 
-PERSONPROVIDER:
-  ribbon:
-    #配置指定服务的负载均衡策略
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
-    # Ribbon的连接超时时间毫秒
-    ConnectTimeout: 250
-    # Ribbon的数据读取超时时间
-    ReadTimeout: 1000
-    # 是否对所有操作都进行重试
-    OkToRetryOnAllOperations: true
-    # 切换实例的重试次数
-    MaxAutoRetriesNextServer: 1
-    # 对当前实例的重试次数
-    MaxAutoRetries: 3
+ribbon:
+  #配置指定服务的负载均衡策略
+  NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+  # Ribbon的连接超时时间毫秒
+  ConnectTimeout: 250
+  # Ribbon的数据读取超时时间
+  ReadTimeout: 1000
+  # 是否对所有操作都进行重试
+  OkToRetryOnAllOperations: true
+  # 切换实例的重试次数
+  MaxAutoRetriesNextServer: 1
+  # 对当前实例的重试次数
+  MaxAutoRetries: 3
 
 ##如果接口的调用时间超过6秒 才会触发熔断机制的方法 否则正常执行
 ##为了避免因为熔断时间果断 重试机制失效
