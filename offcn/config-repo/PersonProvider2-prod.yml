@@ -16,7 +16,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8888/eureka,http://localhost:9999/eureka
-ProviderVersion: PersonProvider2
+ProviderVersion: PersonProvider2_update
 management:
   endpoints:
     web:
