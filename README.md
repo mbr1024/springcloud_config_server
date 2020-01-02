@@ -1,0 +1,2 @@
+# springcloud_config_server
+学习spring cloud时候的配的远程配置中心
